@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Stats preview card component</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/index.css" />
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+
+  <body class="background">
+    <main>
+      <div>
+        <div class="card mb-5 mx-auto">
+          <div class="row no-gutters">
+            <div class="col-xl-6">
+              <div class="card-body p-5">
+                <h3 class="card-title">
+                  Get <span id="insights">insights</span> that help your
+                  business grow.
+                </h3>
+                <p class="card-text">
+                  Discover the benefits of data analytics and make better
+                  decisions regarding revenue, customer experience, and overall
+                  efficiency.
+                </p>
+                <p class="card-text">
+                  <small class="text-muted">
+                    <div class="small-card">
+                      <div class="numbers">10k+</div>
+                      <div class="headings">companies</div>
+                    </div>
+                    <div class="small-card">
+                      <div class="numbers">314</div>
+                      <div class="headings">templates</div>
+                    </div>
+                    <div class="small-card">
+                      <div class="numbers">12M+</div>
+                      <div class="headings">queries</div>
+                    </div>
+                  </small>
+                </p>
+              </div>
+            </div>
+            <div class="col-xl-6">
+              <picture>
+                <source
+                  media="(max-width:1199px)"
+                  srcset="images/image-header-mobile.jpg"
+                />
+                <source srcset="images/image-header-desktop.jpg" />
+                <img
+                  src="./images/image-header-desktop.jpg"
+                  class="card-img-top d-block"
+                  alt="work image"
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge " target="_blank "
+        >Frontend Mentor</a
+      >. Coded by <a href="# ">Shruti Shinde</a>.
+    </footer>
+  </body>
+</html>

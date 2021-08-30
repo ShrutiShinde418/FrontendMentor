@@ -1,0 +1,97 @@
+@font-face {
+  font-family: Inter-Bold;
+  /* src: url("Inter/Inter-Bold.ttf"); */
+  src: url("../Inter/Inter-Bold.ttf");
+}
+@font-face {
+  font-family: Lexend Deca;
+  src: url("../Lexend_Deca/LexendDeca-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: Inter;
+  src: url("../Inter/Inter-Regular.ttf");
+}
+.background {
+  background-color: rgb(10, 12, 27);
+}
+
+.main-paragraph {
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+.headings {
+  color: hsla(0, 0%, 100%, 0.6);
+  text-transform: uppercase;
+  font-family: Lexend Deca;
+  padding-top: 2px;
+  letter-spacing: 1px;
+  font-size: 11px;
+}
+
+.card-title {
+  color: hsl(0, 0%, 100%);
+  font-family: Inter-Bold;
+  font-size: 15px;
+  margin-top: 1.3rem;
+}
+.small-card {
+  display: inline-block;
+  font-family: Inter;
+  margin: 1rem 2.5rem 0 0;
+}
+.card-text {
+  margin-top: 25px;
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 15px;
+}
+div > h3 {
+  font-size: 2rem !important;
+}
+
+div > .card {
+  border-radius: 10px;
+}
+div img {
+  border-radius: 0 10px 10px 0 !important;
+  background-color: hsl(277, 64%, 61%);
+  -webkit-filter: sepia(1) hue-rotate(239deg) saturate(121.7%) brightness(60%);
+  filter: sepia(1) hue-rotate(239deg) saturate(121.7%) brightness(60%);
+}
+.card {
+  max-width: 950px;
+  background-color: rgb(28, 25, 56);
+  margin-top: 18vh;
+}
+#insights {
+  color: hsl(277, 64%, 61%);
+}
+.numbers {
+  color: hsl(0, 0%, 100%);
+  font-weight: 900;
+  font-size: 20px;
+}
+@media (max-width: 1199px) {
+  .row {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  div img {
+    border-radius: 10px 10px 0 0 !important;
+  }
+  .background {
+    margin: 0 2rem 4rem 2rem;
+  }
+  .card-body {
+    text-align: center;
+  }
+  .small-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 2.5rem;
+    margin-top: 1.5rem;
+  }
+}
