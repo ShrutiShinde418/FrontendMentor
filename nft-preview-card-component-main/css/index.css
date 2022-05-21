@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Space+Mono:wght@400;700&display=swap");
+:root {
+  --bg-blue: hsl(217, 54%, 11%);
+  --card-bg: hsl(216, 50%, 16%);
+  --line-blue: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+  --cyan: hsl(178, 100%, 50%);
+  --soft-blue: hsl(215, 51%, 70%);
+}
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  background-color: var(--bg-blue);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  -ms-flex-direction: column;
+  align-items: center;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  -ms-flex-direction: column;
+  align-items: center;
+}
+.card {
+  background-color: var(--card-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.35rem;
+  flex-direction: column;
+  -ms-flex-direction: column;
+  border-radius: 1rem;
+  width: 300px;
+  height: 560px;
+}
+.card__cover {
+  max-height: 300px;
+  width: 100%;
+  margin-bottom: 1.2rem;
+  position: relative;
+}
+.card__cover > img:hover {
+  background: center no-repeat url(/images/icon-view.svg);
+}
+.card img {
+  height: auto;
+  max-width: 100%;
+  position: relative;
+  border-radius: 0.5rem;
+}
+
+#main__heading {
+  font-family: "Outfit";
+  font-weight: 600;
+  font-size: 1.45rem;
+  color: var(--white);
+  padding: 2rem 0 0.75rem 0;
+  text-decoration: none;
+}
+#main__heading:hover {
+  color: var(--cyan);
+}
+h1 {
+  font-family: "Outfit";
+  font-size: 18px;
+  color: var(--soft-blue);
+  font-weight: 300;
+  padding-right: 1rem;
+  line-height: 1.5;
+}
+.card__content {
+  flex: 1;
+}
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1.3rem 0 1.2rem 0;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid rgb(59, 71, 102);
+}
+.info p {
+  padding-top: 0;
+  margin: 0;
+}
+.info span {
+  display: flex;
+  align-items: center;
+  font-family: "Outfit";
+}
+.info span:first-of-type {
+  color: var(--cyan);
+  font-weight: 600;
+}
+.info span:last-of-type {
+  color: var(--soft-blue);
+  font-weight: 300;
+}
+.info span img {
+  margin-right: 0.5rem;
+  margin-bottom: 0;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 2rem;
+  color: black;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+h3 {
+  color: var(--soft-blue);
+  font-family: "Outfit";
+  font-weight: 300;
+  margin: 0.5rem 0 0 0;
+  align-self: start;
+}
+h3 a {
+  color: var(--white);
+  font-size: 18px;
+  text-decoration: none;
+  align-self: center;
+}
+h3 a:hover {
+  color: var(--cyan);
+}
+.author {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+.author img {
+  height: 40px;
+  max-width: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--card-bg);
+}
+.author img:hover {
+  border: 1px solid var(--white);
+  border-radius: 50%;
+}
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--cyan);
+  transition: 0.5s all;
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 0.5rem;
+}
+.overlay:hover {
+  opacity: 0.5;
+}
+.overlay img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
