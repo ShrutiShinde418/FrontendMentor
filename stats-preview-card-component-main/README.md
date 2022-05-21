@@ -11,12 +11,8 @@ This is a solution to the [Stats preview card component challenge on Frontend Me
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -28,7 +24,7 @@ Users should be able to:
 
 ### Screenshot
 
-![stats-preview-card-component-main/Screenshot.PNG](./screenshot.jpg)
+![stats-preview-card-component-main/Screenshot.PNG](./Screenshot.PNG)
 
 
 ### Links
@@ -75,19 +71,6 @@ div img {
   filter: sepia(1) hue-rotate(239deg) saturate(121.7%) brightness(60%);
 }
 ```
-
-
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-
-### Continued development
-
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-- Want to work on acquiring more CSS skills
-- More Responsive Web development practice
-
 
 ### Useful resources
 

@@ -26,12 +26,12 @@ Users should be able to:
 
 ### Screenshot
 
-![Screenshot of image](./screenshot.jpg)
+![Output](./screenshot.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/ShrutiShinde418/FrontendMentor/tree/main/nft-preview-card-component-main](https://github.com/ShrutiShinde418/FrontendMentor/tree/main/nft-preview-card-component-main)
+- Live Site URL: [https://frontend-mentor-7rj3nmeqz-shrutishinde418.vercel.app/](https://frontend-mentor-7rj3nmeqz-shrutishinde418.vercel.app/)
 
 ## My process
 
