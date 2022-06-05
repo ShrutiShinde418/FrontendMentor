@@ -1,0 +1,151 @@
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+@font-face {
+  font-family: RedHat900;
+  src: url("../fonts/RedHatDisplay-Black.ttf");
+}
+@font-face {
+  font-family: RedHat700;
+  src: url("../fonts/RedHatDisplay-Bold.ttf");
+}
+@font-face {
+  font-family: RedHat500;
+  src: url("../fonts/RedHatDisplay-Medium.ttf");
+}
+body {
+  background: url("../images/pattern-background-desktop.svg") no-repeat;
+  background-size: contain;
+  margin: 0;
+  background-color: var(--pale-blue);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  width: 400px;
+  height: 630px;
+  padding: 0;
+  align-items: stretch;
+  margin: 1rem 0;
+  border-radius: 15px;
+}
+div img {
+  border-radius: 15px 15px 0 0 !important;
+}
+div h1 {
+  font-family: RedHat900;
+  color: var(--dark-blue);
+  font-size: 1.5rem;
+}
+div h2 {
+  font-size: 1rem;
+  font-family: RedHat500;
+  line-height: 1.55em;
+  color: var(--desaturated-blue);
+}
+.card .card:last-child {
+  background-color: var(--very-pale-blue);
+  border: none;
+}
+.btn-primary,
+.btn-primary:focus,
+.btn-primary:active {
+  background-color: var(--bright-blue);
+  color: var(--very-pale-blue);
+  font-family: RedHat700;
+  padding: 0.7rem 0;
+  width: 100%;
+  border-radius: 0.65rem;
+  font-size: 1rem;
+  border: none;
+}
+.btn-primary:hover {
+  opacity: 0.8;
+  background-color: var(--bright-blue);
+}
+.card-body {
+  flex: 1 0 auto;
+}
+.music-card {
+  background-color: var(--very-pale-blue);
+  padding: 1.3rem;
+  align-items: center;
+  border-radius: 0.6rem;
+  display: flex;
+  justify-content: space-between;
+}
+.music-card h3 {
+  font-family: RedHat700;
+  font-size: 1rem;
+  margin-bottom: 0.4rem;
+}
+.music-card h4 {
+  font-family: RedHat500;
+  color: var(--desaturated-blue);
+  font-size: 1.015rem;
+  margin-bottom: 0;
+}
+.music-card a {
+  padding-right: 0;
+  font-family: RedHat700;
+  color: var(--bright-blue);
+  font-size: 0.85rem;
+}
+.music-card a:hover {
+  text-decoration: none;
+  color: var(--bright-blue);
+  opacity: 0.8;
+}
+.music-card__options a {
+  color: var(--desaturated-blue);
+  font-family: RedHat900;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+.music-card__options a:hover,
+.music-card__options a:focus,
+.music-card__options a:active {
+  color: var(--dark-blue);
+}
+
+@media (max-width: 395px) {
+  .card {
+    width: 350px;
+    height: 580px;
+  }
+}
+@media (max-width: 992px) {
+  body {
+    background: url("../images/pattern-background-mobile.svg") no-repeat;
+    background-size: contain;
+    background-color: var(--pale-blue);
+  }
+}
+@media (min-width: 320px) and (max-width: 350px) {
+  .card {
+    width: 290px;
+    height: 530px;
+  }
+  div h1 {
+    font-size: 1.2rem;
+  }
+  div h2{
+    font-size: 0.9rem;
+  }
+  .music-card{
+    padding: 1.2rem 1rem;
+  }
+  .music-card h3{
+    font-size: 0.9rem;
+    margin-bottom: 0.2rem;
+  }
+  .music-card h4{
+    font-size: 0.95rem;
+  }
+}
