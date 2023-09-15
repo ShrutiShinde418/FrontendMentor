@@ -1,33 +1,26 @@
-$white: hsl(0, 0%, 100%);
-$dark-blue: hsl(218, 44%, 22%);
-$light-gray: hsl(212, 45%, 89%);
-$grayish-blue: hsl(220, 15%, 55%);
-$b-radius: 1rem;
-$regular: 400;
-$bold: 700;
-html,
-body {
-  height: 100%;
+@import "variables";
+@mixin flexStyling($alignItems) {
   display: flex;
   justify-content: center;
   flex-direction: column;
   -ms-flex-direction: column;
-  align-items: center;
+  align-items: $alignItems;
+}
+html,
+body {
+  height: 100%;
+  @include flexStyling(center);
   background-color: $light-gray;
 }
 .card {
   border-radius: $b-radius;
   padding: 1rem;
   background-color: $white;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  -ms-flex-direction: column;
-  align-items: stretch;
-  .card__cover {
+  @include flexStyling(stretch);
+  &__cover {
     width: 100%;
   }
-  .card__content {
+  &__content {
     flex: 1;
 
     h1 {
@@ -51,6 +44,6 @@ body {
     height: auto;
     max-width: 100%;
   }
-  width: 18rem;
-  height: 28.5rem;
+  max-width: 18rem;
+  max-height: 28.5rem;
 }
